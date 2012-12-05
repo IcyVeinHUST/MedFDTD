@@ -1,0 +1,53 @@
+<Path>
+path_save=F:\work\
+path_log=F:\work\
+<Time>
+nMax=2000
+dt=1.925833e-012
+<Mesh>
+_spaceX=100,_spaceY=100,_spaceZ=100
+dx=1e-003,dy=1e-003,dz=1e-003
+padding=0
+<Absorbing boundary>
+abcNo=1
+thicknessOfPml=7
+<Power source>
+sourceType=0
+_isource=50,_jsource=50,_ksource=50
+port=z
+waveForm=0
+amp=1
+freq=1.800000e+009
+t0=0
+pulse_width=0
+pathSRC=F:\work\source.txt
+<Model>
+-<Import model>
+path_data=F:\work\
+model_name=model.txt
+media_name=media.txt
+mediaNum=0
+-<Build object>
+object_num=0
+3,30,55,10,40,30,80,0.08,5.3,9.2e3
+-<Antenna>
+antenna_amount=0
+antenna_direction=3
+antenna_feed_x=50,antenna_feed_y=50,antenna_feed_z=50
+antenna_impedance=73.1
+antenna_length_high=39,antenna_length_low=39
+<Field Save>
+save_plane_amount=3
+saveStart=1,saveEnd=2000,saveStep=1,savePlaneNo=1,slice=50
+saveStart=1,saveEnd=2000,saveStep=1,savePlaneNo=2,slice=50
+saveStart=1,saveEnd=2000,saveStep=1,savePlaneNo=3,slice=50
+<SAR>
+-<Whole body SAR>
+Whole body SAR 1
+-<Mass Averaged SAR>
+Amount of Mass Averaged SAR 2
+Mass Averaged SAR 0.001
+Mass Averaged SAR 0.01
+-<LocalSAR>
+save_localSAR_amount=0
+saveLocalSARStart=1713,saveLocalSAREnd=2000,saveLocalSARPlaneNo=1,LocalSARslice=1
